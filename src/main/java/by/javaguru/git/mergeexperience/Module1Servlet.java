@@ -9,6 +9,7 @@ import jakarta.servlet.annotation.*;
 @WebServlet("/module1")
 public class Module1Servlet extends HttpServlet {
     private String message;
+
     public void init() {
         message = "Модуль 1";
     }
@@ -31,11 +32,12 @@ public class Module1Servlet extends HttpServlet {
                     + "</td></tr>");
 
         out.println("</table>");
+        //Добавка кнопок
         out.println(
                 "<form action ='module1'>" +
-                        "<input type='submit' value='<- Предыдущий модуль'"+
-                        "<input type='submit' value='<-  Следующий модуль ->'"
-
+                        "<input type='submit' value='<- Предыдущий модуль'/>"
+                        + "<input type='submit' value='<-  Следующий модуль ->'/>"
+                        + "/form>"
         );
 
         out.println("</body></html>");

@@ -31,6 +31,12 @@ public class Module1Servlet extends HttpServlet {
                     + "</td></tr>");
 
         out.println("</table>");
+        out.println(
+                "<form action ='module1'>" +
+                        "<input type='submit' value='<- Предыдущий модуль'"+
+                        "<input type='submit' value='<-  Следующий модуль ->'"
+
+        );
 
         out.println("</body></html>");
     }

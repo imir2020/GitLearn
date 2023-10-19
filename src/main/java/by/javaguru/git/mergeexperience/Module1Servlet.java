@@ -35,12 +35,18 @@ public class Module1Servlet extends HttpServlet {
 
         //Добавка кнопок
         out.println("""
-                        <form> 
-                        <button type='submit' formaction='module2'> -> </button>
-                        <button type='submit' formaction='module4'> <- </button>
-                        </form>
-                        """
+                <form> 
+                <button type='submit' formaction='module2'> -> </button>
+                <button type='submit' formaction='module4'> <- </button>
+                </form>
+                """
         );
+        out.println("""
+                <button type="button">
+                    <a href="description.html">Описание</a>
+                </button>
+                                
+                """);
 
         out.println("</body></html>");
     }

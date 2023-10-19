@@ -33,7 +33,12 @@ public class Module2Servlet extends HttpServlet {
                          </form>
                          """
         );
-
+        out.println("""
+                <button type="button">
+                    <a href="description2.html">Описание</a>
+                </button>
+                                
+                """);
         out.println("</body></html>");
     }
 

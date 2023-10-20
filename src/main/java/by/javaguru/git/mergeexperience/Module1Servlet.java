@@ -35,8 +35,8 @@ public class Module1Servlet extends HttpServlet {
 
             out.println("</table>");
         }
-        //Добавка кнопок
 
+        //Добавка кнопок
         out.println("""
                 <br/>
                 <br/>

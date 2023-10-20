@@ -37,6 +37,12 @@ public class Module3Servlet extends HttpServlet {
         out.println("</table>");
 
         //Добавка кнопок
+        out.println("""
+                <button type="button">
+                    <a href="description.html">Описание</a>
+                </button>
+                                
+                """);
         out.println(
                 """
                          <form> 
@@ -45,12 +51,7 @@ public class Module3Servlet extends HttpServlet {
                          </form>
                          """
         );
-        out.println("""
-                <button type="button">
-                    <a href="description2.html">Описание</a>
-                </button>
-                                
-                """);
+
         out.println("</body></html>");
     }
 

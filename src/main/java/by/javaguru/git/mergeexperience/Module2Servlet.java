@@ -25,20 +25,21 @@ public class Module2Servlet extends HttpServlet {
         out.println("<h1>" + message + "</h1>");
 
         //Добавка кнопок
+        out.println("""
+                <button type="button">
+                    <a href="description2.html">Описание</a>
+                </button>
+
+                """);
         out.println(
                 """
-                         <form> 
+                         <form>
                          <button type='submit' formaction='module1'> <- </button>
                          <button type='submit' formaction='module3'> -> </button>
                          </form>
                          """
         );
-        out.println("""
-                <button type="button">
-                    <a href="description2.html">Описание</a>
-                </button>
-                                
-                """);
+
         out.println("</body></html>");
     }
 

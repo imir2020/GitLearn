@@ -26,10 +26,13 @@ public class Module2Servlet extends HttpServlet {
 
         //Добавка кнопок
         out.println("""
+                <br/>
+                <br/>
                 <button type="button">
                     <a href="description2.html">Описание</a>
                 </button>
-
+                <br/>
+                <br/>
                 """);
         out.println(
                 """

@@ -38,10 +38,13 @@ public class Module3Servlet extends HttpServlet {
 
         //Добавка кнопок
         out.println("""
+                <br/>
+                <br/>
                 <button type="button">
                     <a href="description.html">Описание</a>
                 </button>
-                                
+                <br/>
+                <br/>                
                 """);
         out.println(
                 """
